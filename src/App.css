@@ -62,6 +62,7 @@ body {
 @media (max-width: 1360px) {
   #NasaPhoto {
     display: block;
+    margin: 0;
   }
 }
 
