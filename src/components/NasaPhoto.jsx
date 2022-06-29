@@ -6,9 +6,11 @@ export default function NasaPhoto() {
   const [photoData, setPhotoData] = useState(null);
   console.log(process.env.REACT_APP_API_KEY);
   useEffect(() => {
-    api.get(`apod?api_key=${process.env.REACT_APP_API_KEY}`).then((data) => {
-      setPhotoData(data.data);
-    });
+    api
+      .get(`apod?api_key=rFrZMO7qYWP8gIO8LAAhVNcIhVQvcperFuwTE6UL`)
+      .then((data) => {
+        setPhotoData(data.data);
+      });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
