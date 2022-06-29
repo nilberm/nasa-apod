@@ -19,6 +19,7 @@ export default function NasaPhoto() {
 
   return (
     <>
+      <div id="headText">Every Day a different photo!</div>
       <div id="NasaPhoto">
         {photoData.media_type === "image" ? (
           <img src={photoData.url} alt={photoData.title} className="media" />
